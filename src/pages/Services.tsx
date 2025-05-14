@@ -2,7 +2,7 @@
 import React from 'react';
 import HeroSection from '@/components/HeroSection';
 import { Link } from 'react-router-dom';
-import { Heart, Calendar, MapPin, Users, Check } from 'lucide-react';
+import { Heart, Calendar, Check } from 'lucide-react';
 
 const Services = () => {
   return (
@@ -18,7 +18,7 @@ const Services = () => {
       <section className="section-container">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-ivory/80 text-lg">
-            At Dreamcatcherz, we offer a comprehensive range of event planning services designed to turn your vision into an extraordinary reality. From intimate gatherings to grand celebrations, our team of experienced planners will guide you through every step of the process.
+            At Dreamcatcherz, we offer a comprehensive range of event planning services designed to turn your vision into an extraordinary reality. Our team of experienced planners will guide you through every step of the process.
           </p>
         </div>
 
@@ -108,92 +108,6 @@ const Services = () => {
               </div>
             </div>
           </div>
-
-          {/* Destination Events */}
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="md:w-1/2 order-2 md:order-1">
-              <div className="p-1 border border-rosegold/30 rounded-lg bg-charcoal-dark">
-                <img 
-                  src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&q=80" 
-                  alt="Destination Event" 
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 order-1 md:order-2">
-              <div className="flex items-center gap-3 mb-4">
-                <MapPin className="text-rosegold h-8 w-8" />
-                <h2 className="font-playfair text-3xl font-semibold">Destination Events</h2>
-              </div>
-              <p className="text-ivory/80 mb-6">
-                Transform your event into an unforgettable getaway. Our team specializes in planning extraordinary experiences in breathtaking locations around the world, handling all the logistics so you can focus on making memories.
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2">
-                  <Check className="text-rosegold h-5 w-5 mt-1 flex-shrink-0" />
-                  <span className="text-ivory/80">Destination selection and venue sourcing</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-rosegold h-5 w-5 mt-1 flex-shrink-0" />
-                  <span className="text-ivory/80">Travel arrangements and accommodations</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-rosegold h-5 w-5 mt-1 flex-shrink-0" />
-                  <span className="text-ivory/80">Local vendor coordination and management</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-rosegold h-5 w-5 mt-1 flex-shrink-0" />
-                  <span className="text-ivory/80">Activities and excursion planning</span>
-                </li>
-              </ul>
-              <Link to="/contact" className="btn-primary inline-block">
-                Get a Quote
-              </Link>
-            </div>
-          </div>
-
-          {/* Corporate Events */}
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="md:w-1/2">
-              <div className="flex items-center gap-3 mb-4">
-                <Users className="text-rosegold h-8 w-8" />
-                <h2 className="font-playfair text-3xl font-semibold">Corporate Events</h2>
-              </div>
-              <p className="text-ivory/80 mb-6">
-                From team-building retreats to client appreciation galas, we create professional, polished corporate events that strengthen relationships and leave lasting impressions.
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2">
-                  <Check className="text-rosegold h-5 w-5 mt-1 flex-shrink-0" />
-                  <span className="text-ivory/80">Strategic event planning aligned with company goals</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-rosegold h-5 w-5 mt-1 flex-shrink-0" />
-                  <span className="text-ivory/80">Brand-consistent design and execution</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-rosegold h-5 w-5 mt-1 flex-shrink-0" />
-                  <span className="text-ivory/80">Keynote speaker and entertainment booking</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Check className="text-rosegold h-5 w-5 mt-1 flex-shrink-0" />
-                  <span className="text-ivory/80">Registration and attendee management</span>
-                </li>
-              </ul>
-              <Link to="/contact" className="btn-primary inline-block">
-                Get a Quote
-              </Link>
-            </div>
-            <div className="md:w-1/2">
-              <div className="p-1 border border-rosegold/30 rounded-lg bg-charcoal-dark">
-                <img 
-                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&q=80" 
-                  alt="Corporate Event" 
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -248,6 +162,35 @@ const Services = () => {
               <p className="text-ivory/80">
                 Ensure guests arrive safely and on time with our comprehensive transportation planning services.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Moodboard Tool CTA */}
+      <section className="section-container">
+        <div className="bg-gradient-to-r from-charcoal-dark to-charcoal rounded-xl overflow-hidden">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 p-10 md:p-12">
+              <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-6">
+                <span className="rosegold-text">Moodboard Generator</span>
+              </h2>
+              <p className="text-ivory/90 mb-8">
+                Visualize your event before it happens. Our interactive moodboard tool helps you explore color schemes, themes, and styling elements to create the perfect atmosphere for your special occasion.
+              </p>
+              <Link to="/moodboard" className="btn-primary inline-flex items-center">
+                Create Your Moodboard
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </Link>
+            </div>
+            <div className="md:w-1/2">
+              <img 
+                src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&q=80" 
+                alt="Event Moodboard" 
+                className="w-full h-64 md:h-96 object-cover"
+              />
             </div>
           </div>
         </div>

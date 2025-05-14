@@ -42,6 +42,10 @@
     @apply border-border;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-charcoal-dark text-ivory font-montserrat;
   }
@@ -54,7 +58,7 @@
 /* Custom classes */
 @layer components {
   .section-container {
-    @apply container mx-auto px-4 py-16 md:py-24;
+    @apply container mx-auto px-4 py-16 md:py-20;
   }
   
   .section-title {
@@ -62,15 +66,15 @@
   }
   
   .section-subtitle {
-    @apply font-montserrat text-lg md:text-xl text-center max-w-3xl mx-auto mb-12 text-ivory/80;
+    @apply font-montserrat text-lg text-center max-w-3xl mx-auto mb-10 text-ivory/80;
   }
 
   .btn-primary {
-    @apply bg-rosegold-gradient text-white font-montserrat font-medium px-6 py-3 rounded-md hover:shadow-rosegold transition-all duration-300;
+    @apply bg-rosegold-gradient text-white font-montserrat font-medium px-6 py-3 rounded-md hover:shadow-rosegold transition-all duration-300 transform hover:scale-105;
   }
 
   .btn-secondary {
-    @apply border-2 border-rosegold text-rosegold font-montserrat font-medium px-6 py-3 rounded-md hover:bg-rosegold/10 transition-all duration-300;
+    @apply border-2 border-rosegold text-rosegold font-montserrat font-medium px-6 py-3 rounded-md hover:bg-rosegold/10 transition-all duration-300 transform hover:scale-105;
   }
 
   .rosegold-text {
@@ -78,7 +82,7 @@
   }
 
   .card-highlight {
-    @apply border border-rosegold/30 bg-charcoal/50 backdrop-blur-sm hover:border-rosegold/60 transition-all duration-300 rounded-lg p-6 shadow-lg;
+    @apply border border-rosegold/20 bg-charcoal/50 backdrop-blur-sm hover:border-rosegold/60 transition-all duration-300 rounded-lg p-6 shadow-lg hover:shadow-rosegold/10 hover:transform hover:scale-[1.01];
   }
 }
 
@@ -104,4 +108,26 @@
 .rosegold-underline:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* Enhanced animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Enhanced floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
