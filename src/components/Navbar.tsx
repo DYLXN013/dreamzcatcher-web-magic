@@ -24,18 +24,18 @@ const Navbar = () => {
 
   return (
     <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-charcoal-dark/90 backdrop-blur-md py-3 shadow-md' : 'bg-transparent py-5'
+      className={`fixed w-full z-50 transition-all duration-500 ${
+        isScrolled ? 'bg-charcoal-dark/90 backdrop-blur-md py-2 shadow-xl' : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <NavLink to="/" className="flex items-center gap-2">
+        <NavLink to="/" className="flex items-center gap-3">
           <img 
-            src="/lovable-uploads/f0fa0de0-b8f2-4022-af79-e10580b1bb2b.png" 
+            src="/lovable-uploads/f46cf8fd-9770-4e3d-87af-986c847cbd5d.png" 
             alt="Dreamcatcherz Logo" 
-            className="h-12 w-auto" 
+            className="h-14 w-auto transition-all duration-300 hover:opacity-80" 
           />
-          <span className="font-playfair text-xl md:text-2xl font-semibold">
+          <span className="font-playfair text-xl md:text-2xl font-semibold tracking-wider">
             Dreamcatcherz
           </span>
         </NavLink>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <NavLink 
             to="/" 
             className={({isActive}) => 
-              isActive ? "rosegold-text font-medium" : "rosegold-underline text-ivory hover:text-ivory/80"
+              isActive ? "rosegold-text font-medium" : "rosegold-underline text-ivory hover:text-ivory/80 transition-all duration-300"
             }
           >
             Home
@@ -53,7 +53,7 @@ const Navbar = () => {
           <NavLink 
             to="/about" 
             className={({isActive}) => 
-              isActive ? "rosegold-text font-medium" : "rosegold-underline text-ivory hover:text-ivory/80"
+              isActive ? "rosegold-text font-medium" : "rosegold-underline text-ivory hover:text-ivory/80 transition-all duration-300"
             }
           >
             About
@@ -61,15 +61,23 @@ const Navbar = () => {
           <NavLink 
             to="/services" 
             className={({isActive}) => 
-              isActive ? "rosegold-text font-medium" : "rosegold-underline text-ivory hover:text-ivory/80"
+              isActive ? "rosegold-text font-medium" : "rosegold-underline text-ivory hover:text-ivory/80 transition-all duration-300"
             }
           >
             Services
           </NavLink>
           <NavLink 
+            to="/moodboard" 
+            className={({isActive}) => 
+              isActive ? "rosegold-text font-medium" : "rosegold-underline text-ivory hover:text-ivory/80 transition-all duration-300"
+            }
+          >
+            Moodboard
+          </NavLink>
+          <NavLink 
             to="/contact" 
             className={({isActive}) => 
-              isActive ? "text-charcoal-dark font-medium bg-rosegold-gradient px-5 py-2 rounded-md" : "btn-primary"
+              isActive ? "text-charcoal-dark font-medium bg-rosegold-gradient px-5 py-2 rounded-md shadow-md hover:shadow-rosegold/20 transition-all" : "btn-primary shadow-md hover:shadow-rosegold/20 transition-all"
             }
           >
             Contact
@@ -79,7 +87,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-ivory hover:text-rosegold"
+          className="md:hidden text-ivory hover:text-rosegold transition-all duration-300"
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
@@ -92,13 +100,13 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="md:hidden bg-charcoal-dark/95 backdrop-blur-md border-t border-rosegold/20 p-4">
+        <nav className="md:hidden bg-charcoal-dark/95 backdrop-blur-md border-t border-rosegold/20 p-4 animate-fade-in shadow-lg">
           <div className="flex flex-col space-y-4 items-center">
             <NavLink 
               to="/" 
               onClick={() => setIsMenuOpen(false)}
               className={({isActive}) => 
-                isActive ? "rosegold-text font-medium w-full text-center py-2" : "text-ivory hover:text-rosegold w-full text-center py-2"
+                isActive ? "rosegold-text font-medium w-full text-center py-2" : "text-ivory hover:text-rosegold w-full text-center py-2 transition-all duration-300"
               }
             >
               Home
@@ -107,7 +115,7 @@ const Navbar = () => {
               to="/about" 
               onClick={() => setIsMenuOpen(false)}
               className={({isActive}) => 
-                isActive ? "rosegold-text font-medium w-full text-center py-2" : "text-ivory hover:text-rosegold w-full text-center py-2"
+                isActive ? "rosegold-text font-medium w-full text-center py-2" : "text-ivory hover:text-rosegold w-full text-center py-2 transition-all duration-300"
               }
             >
               About
@@ -116,15 +124,24 @@ const Navbar = () => {
               to="/services" 
               onClick={() => setIsMenuOpen(false)}
               className={({isActive}) => 
-                isActive ? "rosegold-text font-medium w-full text-center py-2" : "text-ivory hover:text-rosegold w-full text-center py-2"
+                isActive ? "rosegold-text font-medium w-full text-center py-2" : "text-ivory hover:text-rosegold w-full text-center py-2 transition-all duration-300"
               }
             >
               Services
             </NavLink>
             <NavLink 
+              to="/moodboard" 
+              onClick={() => setIsMenuOpen(false)}
+              className={({isActive}) => 
+                isActive ? "rosegold-text font-medium w-full text-center py-2" : "text-ivory hover:text-rosegold w-full text-center py-2 transition-all duration-300"
+              }
+            >
+              Moodboard
+            </NavLink>
+            <NavLink 
               to="/contact" 
               onClick={() => setIsMenuOpen(false)}
-              className="btn-primary w-full text-center"
+              className="btn-primary w-full text-center shadow-md"
             >
               Contact
             </NavLink>
