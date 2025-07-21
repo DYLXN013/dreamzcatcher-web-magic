@@ -116,21 +116,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 group">
                 <Phone size={18} className="text-rosegold group-hover:scale-110 transition-transform duration-300" />
-                <span className="text-ivory/70 group-hover:text-ivory transition-colors duration-300">+1 (555) 123-4567</span>
+                <span className="text-ivory/70 group-hover:text-ivory transition-colors duration-300">+44 7720 756007</span>
               </li>
               <li className="flex items-center gap-3 group">
                 <Mail size={18} className="text-rosegold group-hover:scale-110 transition-transform duration-300" />
-                <span className="text-ivory/70 group-hover:text-ivory transition-colors duration-300">info@dreamcatcherz.com</span>
-              </li>
-              <li className="flex items-start gap-3 group">
-                <MapPin size={18} className="text-rosegold group-hover:scale-110 transition-transform duration-300 mt-1" />
-                <span className="text-ivory/70 group-hover:text-ivory transition-colors duration-300">Luxury Ave, Suite 100<br />Beverly Hills, CA</span>
-              </li>
-              <li className="flex items-center gap-3 group">
-                <Instagram size={18} className="text-rosegold group-hover:scale-110 transition-transform duration-300" />
-                <a href="#" className="text-ivory/70 hover:text-rosegold transition-colors duration-300">
-                  @dreamcatcherz
-                </a>
+                <span className="text-ivory/70 group-hover:text-ivory transition-colors duration-300">dreamcatcherz@gmail.com</span>
               </li>
             </ul>
           </div>
