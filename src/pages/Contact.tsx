@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import HeroSection from '@/components/HeroSection';
-import { Phone, Mail, MapPin, Instagram, Calendar, Send } from 'lucide-react';
+import { Phone, Mail, Calendar, Send } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Contact = () => {
@@ -78,7 +78,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-playfair text-lg font-medium">Phone</h3>
-                  <p className="text-ivory/80">+1 (555) 123-4567</p>
+                  <p className="text-ivory/80">+44 7720 756007</p>
                 </div>
               </div>
               
@@ -88,27 +88,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-playfair text-lg font-medium">Email</h3>
-                  <p className="text-ivory/80">info@dreamcatcherz.com</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <div className="bg-rosegold-gradient p-3 rounded-full">
-                  <MapPin className="text-white h-5 w-5" />
-                </div>
-                <div>
-                  <h3 className="font-playfair text-lg font-medium">Office</h3>
-                  <p className="text-ivory/80">Luxury Ave, Suite 100<br />Beverly Hills, CA 90210</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <div className="bg-rosegold-gradient p-3 rounded-full">
-                  <Instagram className="text-white h-5 w-5" />
-                </div>
-                <div>
-                  <h3 className="font-playfair text-lg font-medium">Instagram</h3>
-                  <p className="text-ivory/80">@dreamcatcherz</p>
+                  <p className="text-ivory/80">Dreamzcatchers@outlook.com</p>
                 </div>
               </div>
             </div>
