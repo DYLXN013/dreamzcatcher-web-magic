@@ -43,11 +43,12 @@ const HeroSection: React.FC<HeroProps> = ({
       
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 py-24 text-center">
-        <img 
-          src="/lovable-uploads/f0fa0de0-b8f2-4022-af79-e10580b1bb2b.png" 
-          alt="DreamzCatchers Logo" 
-          className="h-40 md:h-48 w-auto mx-auto mb-8 animate-float drop-shadow-[0_0_20px_rgba(224,160,128,0.4)] shine-effect"
-        />
+                 <div className="h-40 md:h-48 w-auto mx-auto mb-8 animate-float drop-shadow-[0_0_20px_rgba(224,160,128,0.4)] shine-effect flex items-center justify-center">
+           <div className="text-center">
+             <h1 className="font-playfair text-6xl md:text-8xl font-bold text-rosegold mb-2">DC</h1>
+             <p className="font-montserrat text-sm md:text-base text-ivory/80 tracking-widest">DREAMCATCHERZ</p>
+           </div>
+         </div>
         <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in tracking-wide leading-tight">
           {title.split(' ').map((word, index) => (
             <span key={index} className={index % 2 === 1 ? 'rosegold-text' : ''}>
@@ -75,7 +76,7 @@ const HeroSection: React.FC<HeroProps> = ({
             <div className="flex-grow h-px bg-rosegold-gradient opacity-40"></div>
             <div className="mx-6 relative">
               <div className="absolute inset-0 bg-rosegold/20 rounded-full blur-lg"></div>
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative z-10">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg" className="relative z-10">
                 <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" 
                       fill="url(#sparkle)" stroke="url(#sparkleStroke)" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
                 <defs>
@@ -108,7 +109,7 @@ const HeroSection: React.FC<HeroProps> = ({
               fill="none" 
               stroke="currentColor" 
               viewBox="0 0 24 24" 
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
             >
               <path 
                 strokeLinecap="round" 

@@ -31,14 +31,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-3">
-              <img 
-                src="/lovable-uploads/f46cf8fd-9770-4e3d-87af-986c847cbd5d.png" 
-                alt="Dreamcatcherz Logo" 
-                className="h-12 w-auto" 
-              />
-              <span className="font-playfair text-xl font-semibold tracking-wide">
-                Dreamcatcherz
-              </span>
+              <div className="flex items-center">
+                <span className="font-playfair text-2xl font-bold text-rosegold">DC</span>
+                <span className="font-montserrat text-sm text-ivory/80 ml-2 tracking-wider">
+                  DREAMCATCHERZ
+                </span>
+              </div>
             </Link>
             <p className="text-ivory/70 text-sm mt-4">
               Where your dreams become reality. Luxury event planning services that transform your vision into extraordinary experiences.
