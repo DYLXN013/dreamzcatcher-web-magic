@@ -1,0 +1,10 @@
+# Force HTTPS redirects
+http://dreamcatcherz.uk/* https://dreamcatcherz.uk/:splat 301!
+http://www.dreamcatcherz.uk/* https://www.dreamcatcherz.uk/:splat 301!
+
+# Handle www redirects (optional - uncomment if you want www to redirect to non-www)
+# http://www.dreamcatcherz.uk/* https://dreamcatcherz.uk/:splat 301!
+# https://www.dreamcatcherz.uk/* https://dreamcatcherz.uk/:splat 301!
+
+# Handle SPA routing (important for React Router)
+/*    /index.html   200 
