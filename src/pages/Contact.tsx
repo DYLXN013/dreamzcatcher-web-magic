@@ -58,7 +58,7 @@ const Contact = () => {
     } catch (error) {
       console.error('Email sending failed:', error);
       toast.error("Sorry, there was an error sending your message.", {
-        description: "Please try again or contact us directly at dreamcatcherz@gmail.com",
+        description: "Please try again or contact us directly at theofficialdreamcatcherz@gmail.com",
       });
     } finally {
       setIsSubmitting(false);
@@ -103,7 +103,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-playfair text-lg font-medium">Email</h3>
-                  <p className="text-ivory/80">dreamcatcherz@gmail.com</p>
+                  <p className="text-ivory/80">theofficialdreamcatcherz@gmail.com</p>
                 </div>
               </div>
             </div>
