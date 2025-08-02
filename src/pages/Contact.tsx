@@ -1,10 +1,12 @@
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import HeroSection from '@/components/HeroSection';
 import { Phone, Mail, Calendar, Send } from 'lucide-react';
 import { toast } from 'sonner';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,12 +27,19 @@ const Contact = () => {
     });
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission with a timeout
-    setTimeout(() => {
+    try {
+      // EmailJS configuration - your actual credentials
+      const result = await emailjs.sendForm(
+        'service_e0dmtev', // Your EmailJS service ID
+        'template_ih02ql9', // Your EmailJS template ID
+        formRef.current!,
+        'E4_PiVIS2OCWNBMxN' // Your EmailJS public key
+      );
+      
       toast.success("Thank you for your inquiry! We'll be in touch soon.", {
         description: "A member of our team will contact you within 24 hours.",
       });
@@ -46,8 +55,14 @@ const Contact = () => {
         message: '',
       });
       
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      toast.error("Sorry, there was an error sending your message.", {
+        description: "Please try again or contact us directly at dreamcatcherz@gmail.com",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
@@ -122,7 +137,7 @@ const Contact = () => {
                 Tell Us About Your <span className="rosegold-text">Dream Event</span>
               </h2>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-ivory mb-2">

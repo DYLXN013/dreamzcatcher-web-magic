@@ -126,52 +126,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="bg-charcoal">
-        <div className="section-container">
-          <h2 className="section-title">
-            Meet Our <span className="rosegold-text">Team</span>
-          </h2>
-          <p className="section-subtitle">
-            Passionate professionals dedicated to making your dreams come true.
-          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            <div className="text-center">
-              <div className="relative mb-6 mx-auto w-48 h-48 rounded-full overflow-hidden border-4 border-rosegold">
-                <div className="absolute inset-0 bg-charcoal-dark opacity-30"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-playfair text-5xl text-white">A</span>
-                </div>
-              </div>
-              <h3 className="font-playfair text-xl font-semibold">Alexandra Rivera</h3>
-              <p className="text-rosegold">Founder & Creative Director</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="relative mb-6 mx-auto w-48 h-48 rounded-full overflow-hidden border-4 border-rosegold">
-                <div className="absolute inset-0 bg-charcoal-dark opacity-30"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-playfair text-5xl text-white">J</span>
-                </div>
-              </div>
-              <h3 className="font-playfair text-xl font-semibold">Jonathan Blake</h3>
-              <p className="text-rosegold">Lead Event Coordinator</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="relative mb-6 mx-auto w-48 h-48 rounded-full overflow-hidden border-4 border-rosegold">
-                <div className="absolute inset-0 bg-charcoal-dark opacity-30"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-playfair text-5xl text-white">S</span>
-                </div>
-              </div>
-              <h3 className="font-playfair text-xl font-semibold">Sophia Chen</h3>
-              <p className="text-rosegold">Design Specialist</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 };

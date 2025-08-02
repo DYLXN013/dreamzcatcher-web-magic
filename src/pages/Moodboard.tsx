@@ -828,7 +828,7 @@ const Moodboard = () => {
                   <Download className="h-8 w-8" />
                 </div>
                 <h3 className="font-playfair text-xl font-semibold mb-3 text-ivory">Share with Vendors</h3>
-                <p className="text-ivory/80">
+                <p className="text-ivory/90">
                   Save your moodboard and share it with photographers, florists, caterers, and other vendors to ensure everyone understands your vision perfectly.
                 </p>
               </CardContent>
@@ -840,7 +840,7 @@ const Moodboard = () => {
                   <Users className="h-8 w-8" />
                 </div>
                 <h3 className="font-playfair text-xl font-semibold mb-3 text-ivory">Expert Consultation</h3>
-                <p className="text-ivory/80">
+                <p className="text-ivory/90">
                   Schedule a personalized consultation with our design experts to refine your moodboard and develop a comprehensive event plan.
                 </p>
               </CardContent>
@@ -852,7 +852,7 @@ const Moodboard = () => {
                   <Sparkles className="h-8 w-8" />
                 </div>
                 <h3 className="font-playfair text-xl font-semibold mb-3 text-ivory">Bring It to Life</h3>
-                <p className="text-ivory/80">
+                <p className="text-ivory/90">
                   Watch as our experienced team transforms your digital moodboard into a breathtaking reality that exceeds your expectations.
                 </p>
               </CardContent>
