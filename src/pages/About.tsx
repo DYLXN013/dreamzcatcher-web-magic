@@ -33,14 +33,31 @@ const About = () => {
               Our <span className="rosegold-text">Story</span>
             </h2>
             <p className="text-ivory/80 mb-4">
-              Dreamcatcherz Event Planning was born from a passion for creating memorable moments and a belief that every celebration should be as unique as the people it honors.
+              We know life is busy—between work, family, and everything in between, planning an event can feel overwhelming. In today's fast-paced world, time is a luxury, and planning an event should be inspiring, not exhausting.
             </p>
             <p className="text-ivory/80 mb-4">
-              Founded in 2015, our journey began with a simple yet powerful vision: to transform ordinary events into extraordinary experiences that captivate, inspire, and leave lasting impressions.
+              That's why we exist—to transform your vision into reality by handling the complex groundwork with precision and care. We make your dream event possible without the stress.
             </p>
-            <p className="text-ivory/80">
-              Over the years, we've had the privilege of bringing hundreds of dreams to life, from intimate gatherings to grand celebrations, each with its own story and significance. Our team's dedication to excellence, creativity, and personalized service has established Dreamcatcherz as a trusted name in luxury event planning.
+            <p className="text-ivory/80 mb-4">
+              We do the groundwork—from finding and comparing vendors to shortlisting the best options—while you stay in full control of every decision. Your vision guides the way, and we simply make the journey easier.
             </p>
+            <p className="text-ivory/80 mb-4">
+              Our mission is simple: to give you the freedom to enjoy the excitement of planning, without the endless hours of research and coordination that can drain the joy from your special day.
+            </p>
+            <p className="text-ivory/80 mb-4">
+              We curate and connect you with only the most trusted vendors, tailored to your style, preferences, and budget. You remain at the heart of every choice, while we ensure that each detail is seamlessly managed behind the scenes.
+            </p>
+            <p className="text-ivory/80 mb-6">
+              Our commitment is to deliver an effortless planning experience that reflects sophistication, quality, and individuality—so your celebration unfolds flawlessly, just as you envisioned. Whether it's a birthday, wedding, or special celebration, we're here to make sure your big day is as memorable as you've imagined.
+            </p>
+            <div className="bg-rosegold-gradient p-6 rounded-lg text-center">
+              <h3 className="font-playfair text-2xl font-semibold mb-2 text-white">
+                YOUR VISION • WE DELIVER
+              </h3>
+              <p className="text-white/90">
+                You tell us what you want and Dreamcatcherz will deliver your dream.
+              </p>
+            </div>
           </div>
         </div>
       </section>

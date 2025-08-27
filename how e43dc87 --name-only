@@ -1,0 +1,5 @@
+[33me43dc87[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Remove Lovable branding and replace with custom logo design, fix HTTPS issues, and add security headers
+[33mefa1d1f[m Add _redirects file for HTTPS enforcement and SPA routing
+[33mb8f7dc5[m Update email addresses to theofficialdreamcatcherz@gmail.com and add Cloudflare deployment guide
+[33m7a36308[m Initial commit: Dreamcatcherz Event Planning website with functional contact form
+[33m72e368e[m Update contact information

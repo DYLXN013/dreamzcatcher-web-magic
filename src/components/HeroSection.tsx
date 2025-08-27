@@ -43,12 +43,11 @@ const HeroSection: React.FC<HeroProps> = ({
       
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 py-24 text-center">
-                 <div className="h-40 md:h-48 w-auto mx-auto mb-8 animate-float drop-shadow-[0_0_20px_rgba(224,160,128,0.4)] shine-effect flex items-center justify-center">
-           <div className="text-center">
-             <h1 className="font-playfair text-6xl md:text-8xl font-bold text-rosegold mb-2">DC</h1>
-             <p className="font-montserrat text-sm md:text-base text-ivory/80 tracking-widest">DREAMCATCHERZ</p>
-           </div>
-         </div>
+        <img 
+          src="/dreamcatcherz-logo.png" 
+          alt="Dreamcatcherz Logo" 
+          className="h-40 md:h-48 w-auto mx-auto mb-8 animate-float drop-shadow-[0_0_20px_rgba(224,160,128,0.4)] shine-effect"
+        />
         <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in tracking-wide leading-tight">
           {title.split(' ').map((word, index) => (
             <span key={index} className={index % 2 === 1 ? 'rosegold-text' : ''}>
@@ -56,9 +55,18 @@ const HeroSection: React.FC<HeroProps> = ({
             </span>
           ))}
         </h1>
-        <p className="font-montserrat text-xl md:text-2xl max-w-4xl mx-auto mb-12 text-ivory/95 animate-fade-in leading-relaxed" style={{animationDelay: '200ms'}}>
+        <p className="font-montserrat text-xl md:text-2xl max-w-4xl mx-auto mb-6 text-ivory/95 animate-fade-in leading-relaxed" style={{animationDelay: '200ms'}}>
           {subtitle}
         </p>
+        <div className="mb-12 animate-fade-in" style={{animationDelay: '300ms'}}>
+          <h2 className="font-playfair text-2xl md:text-3xl font-semibold mb-2">
+            <span className="rosegold-text">YOUR VISION</span>
+            <span className="text-ivory"> • WE DELIVER</span>
+          </h2>
+          <p className="text-ivory/80 text-lg">
+            You are in control. We make life easy for you.
+          </p>
+        </div>
         {showButton && (
           <div className="animate-fade-in" style={{animationDelay: '400ms'}}>
             <Link 

@@ -30,12 +30,14 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <NavLink to="/" className="flex items-center gap-3">
-          <div className="flex items-center">
-            <span className="font-playfair text-2xl md:text-3xl font-bold text-rosegold">DC</span>
-            <span className="font-montserrat text-sm md:text-base text-ivory/80 ml-1 tracking-wider hidden sm:block">
-              DREAMCATCHERZ
-            </span>
-          </div>
+          <img 
+            src="/dreamcatcherz-logo.png" 
+            alt="Dreamcatcherz Logo" 
+            className="h-14 w-auto transition-all duration-300 hover:opacity-80" 
+          />
+          <span className="font-playfair text-xl md:text-2xl font-semibold tracking-wider">
+            Dreamcatcherz
+          </span>
         </NavLink>
 
         {/* Desktop Navigation */}

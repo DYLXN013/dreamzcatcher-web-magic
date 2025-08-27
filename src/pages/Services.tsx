@@ -40,7 +40,7 @@ const Services = () => {
                 <h2 className="font-playfair text-3xl font-semibold">Wedding Coordination</h2>
               </div>
               <p className="text-ivory/80 mb-6">
-                Your wedding day is one of the most important moments of your life. Our dedicated team will work closely with you to bring your dream wedding to life, handling everything from venue selection and vendor coordination to timeline creation and day-of execution.
+                Your wedding day is one of the most important moments of your life. As your Event Coordinator, I will be responsible for planning, organizing, and executing your wedding from conception through to completion, ensuring all aspects are delivered seamlessly, on time, and within budget while meeting your needs.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-2">
@@ -74,7 +74,7 @@ const Services = () => {
                 <h2 className="font-playfair text-3xl font-semibold">Luxury Party Planning</h2>
               </div>
               <p className="text-ivory/80 mb-6">
-                Whether you're celebrating a milestone birthday, a baby shower, an anniversary, or any special occasion, our team will create a memorable event that reflects your personality and exceeds your expectations.
+                Whether you're celebrating a milestone birthday, a baby shower, an anniversary, or any special occasion, I will collaborate with you to understand your event objectives, theme, audience, and requirements. I will understand your vision by developing detailed event proposals, timelines, and budgets.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-2">
@@ -111,58 +111,75 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Add-On Services */}
+      {/* Our Unique Approach */}
       <section className="bg-charcoal">
         <div className="section-container">
+          <div className="text-center mb-12">
+            <h2 className="font-playfair text-4xl md:text-5xl font-semibold mb-4">
+              <span className="rosegold-text">YOUR VISION</span>
+              <br />
+              <span className="text-ivory">WE DELIVER</span>
+            </h2>
+            <p className="text-ivory/80 text-lg max-w-3xl mx-auto">
+              We differ from other event coordinators. You are in control. We are here to make life easy for you. You tell us what you want and Dreamcatcherz will deliver your dream.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="card-highlight">
+              <h3 className="font-playfair text-xl font-semibold mb-4 rosegold-text">Outstanding Contractors</h3>
+              <p className="text-ivory/80">
+                I have many outstanding contractors that will fulfil your needs and deliver your dream. I will source vendors that meet your needs and negotiate and manage relationships with vendors and service providers to secure contracts and maintain quality.
+              </p>
+            </div>
+            
+            <div className="card-highlight">
+              <h3 className="font-playfair text-xl font-semibold mb-4 rosegold-text">Budget-Conscious Excellence</h3>
+              <p className="text-ivory/80">
+                I will ensure I get vendors who deliver an outstanding service that suits your budget. We can achieve this together, creating the perfect balance of quality and affordability for your special day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Support Services */}
+      <section className="bg-charcoal-dark">
+        <div className="section-container">
           <h2 className="section-title">
-            Add-On <span className="rosegold-text">Services</span>
+            Additional <span className="rosegold-text">Support</span>
           </h2>
           <p className="section-subtitle">
-            Enhance your event with our premium add-on services.
+            In addition to finding the perfect vendors for your event, we also offer extra support to make your planning experience even smoother.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="card-highlight">
-              <h3 className="font-playfair text-xl font-semibold mb-3">Custom Decor Design</h3>
+              <h3 className="font-playfair text-xl font-semibold mb-3">Vendor Coordination</h3>
               <p className="text-ivory/80">
-                Elevate your event with bespoke decor elements designed specifically for your occasion, from floral arrangements to lighting and more.
+                We act as the point of contact for your chosen vendors, ensuring everyone is aligned and nothing is missed.
               </p>
             </div>
             
             <div className="card-highlight">
-              <h3 className="font-playfair text-xl font-semibold mb-3">Photography & Videography</h3>
+              <h3 className="font-playfair text-xl font-semibold mb-3">Event Timeline Creation</h3>
               <p className="text-ivory/80">
-                Capture every magical moment with our curated selection of talented photographers and videographers.
+                A clear, detailed schedule so your day flows effortlessly from start to finish.
               </p>
             </div>
             
             <div className="card-highlight">
-              <h3 className="font-playfair text-xl font-semibold mb-3">VIP Guest Management</h3>
+              <h3 className="font-playfair text-xl font-semibold mb-3">Master of Ceremonies Support</h3>
               <p className="text-ivory/80">
-                Provide a seamless experience for your most important guests with personalized concierge services.
+                We can help organise or recommend the right MC to keep your event engaging and on track.
               </p>
             </div>
-            
-            <div className="card-highlight">
-              <h3 className="font-playfair text-xl font-semibold mb-3">Custom Invitations & Stationery</h3>
-              <p className="text-ivory/80">
-                Make a memorable first impression with beautiful, custom-designed invitations and day-of stationery.
-              </p>
-            </div>
-            
-            <div className="card-highlight">
-              <h3 className="font-playfair text-xl font-semibold mb-3">Entertainment Booking</h3>
-              <p className="text-ivory/80">
-                From live bands and DJs to unique performers, we'll secure entertainment that wows your guests.
-              </p>
-            </div>
-            
-            <div className="card-highlight">
-              <h3 className="font-playfair text-xl font-semibold mb-3">Transportation Coordination</h3>
-              <p className="text-ivory/80">
-                Ensure guests arrive safely and on time with our comprehensive transportation planning services.
-              </p>
-            </div>
+          </div>
+          
+          <div className="mt-8 text-center">
+            <p className="text-ivory/80 text-lg">
+              These services are designed to give you added peace of mind, so you can enjoy the celebration while we take care of the details.
+            </p>
           </div>
         </div>
       </section>
